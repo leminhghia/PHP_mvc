@@ -6,5 +6,5 @@ return [
     "db_name" => 'php_mvc_db',
     "subdirectory" => "",
     "app_url" => 'http://localhost/',
-    "public_url" => "http://localhost/public/"
+    "public_url" => "http://localhost/public"
 ];
