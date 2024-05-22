@@ -14,20 +14,13 @@ class loginController extends \Core\BaseController
             $user = new loginModel();
             $result = $user ->getUsers($Username,$Password);
             if($result){
-<<<<<<< HEAD
-                redirect('index');
-            }
-            else{
-                redirect('login');
-=======
-             
+
                 redirect('index');
             }
             else{
 
                 redirect('login');
                 var_dump("Sai mật khẩu hoặc tài khoản");
->>>>>>> b5b7dd66c17c39f629e7ea9489b20d7c19ce691d
             }
         }
         view('login/login');
