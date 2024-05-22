@@ -4,7 +4,7 @@ namespace Controllers;
 
 use Models\loginModel;
 
-class loginController extends \Core\BaseController
+class loginControllers extends \Core\BaseController
 {
     protected string $Model = "loginModel";
     public function login() {
@@ -14,7 +14,6 @@ class loginController extends \Core\BaseController
             $user = new loginModel();
             $result = $user ->getUsers($Username,$Password);
             if($result){
-             
                 redirect('index');
             }
             else{
