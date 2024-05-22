@@ -14,6 +14,10 @@ class loginControllers extends \Core\BaseController
             $user = new loginModel();
             $result = $user ->getUsers($Username,$Password);
             if($result){
+<<<<<<< HEAD
+=======
+
+>>>>>>> nhanhb
                 redirect('index');
             }
             else{
