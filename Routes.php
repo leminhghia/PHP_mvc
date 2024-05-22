@@ -10,7 +10,7 @@ return [
     [
         "url" => "/login",
         "name" => "login",
-        'controller' => \Controllers\loginController::class,
+        'controller' => \Controllers\LoginControllers::class,
         'method' => 'login'
     ],
 
