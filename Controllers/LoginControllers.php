@@ -20,7 +20,6 @@ class loginController extends \Core\BaseController
             else{
 
                 redirect('login');
-                var_dump("Sai mật khẩu hoặc tài khoản");
             }
         }
         view('login/login');
