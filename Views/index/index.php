@@ -1,9 +1,15 @@
-<?php $Title = "Main" ?>
-<?php require_once __DIR__ . "/../layouts/header.php"; 
-?>
-
 <div class="container">
-    <h2>HOME</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>email</th>
+        </tr>
+        </thead>
+        <tbody>
+    
+        </tbody>
+    </table>
 </div>
-
-<?php require_once __DIR__ . "/../layouts/footer.php"; ?>
