@@ -13,5 +13,10 @@ return [
         'controller' => \Controllers\LoginControllers::class,
         'method' => 'login'
     ],
-
+    [
+        "url" => "/signup",
+        "name" => "signup",
+        'controller' => \Controllers\SignupControllers::class,
+        'method' => 'signup'
+    ],
 ];
