@@ -1,3 +1,3 @@
 <?php
-  header('Location:http://localhost:3000/login');
+header('Location:http://localhost:3000/login')
 ?>

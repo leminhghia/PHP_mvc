@@ -15,9 +15,10 @@ class signupControllers extends \Core\BaseController
       $email = $_POST["email"];
       $registerUser = new signupModel();
       $registerUser->registerUser($Username, $Password, $email);
+      echo "Đăng kí thành công";
     } else {
-      echo "dang ki that bai";
     }
+    
     view('signup/signup');
   }
 }
