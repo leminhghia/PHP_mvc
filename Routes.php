@@ -2,9 +2,9 @@
 return [
 
     [
-        "url" => "/",
+        "url" => "/index",
         "name" => "index",
-        'controller' => \Controllers\Index::class,
+        'controller' => \Controllers\EmployeesControllers::class,
         'method' => 'index'
     ],
     [
@@ -18,5 +18,11 @@ return [
         "name" => "signup",
         'controller' => \Controllers\SignupControllers::class,
         'method' => 'signup'
+    ],
+    [
+        "url" => "/register",
+        "name" => "register",
+        'controller' => \Controllers\RegisterEmpControllers::class,
+        'method' => 'register'
     ],
 ];
