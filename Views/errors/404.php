@@ -1,3 +1,3 @@
 <?php
-echo "tiec";
+header('Location:http://localhost:3000/login')
 ?>
