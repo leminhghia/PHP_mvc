@@ -26,6 +26,11 @@
         text-align: center;
         border: 1px solid black;
     }
+    .fix{
+        border: 1px ;
+        display: flex;
+        justify-content: center;
+    }
 </style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <body>
@@ -34,7 +39,7 @@
             <td>Danh sách nhân viên</td>
         </tr>
         <tr>
-            <th>#</th>
+            <th class="fix">#</th>
             <th>EmpID</th>
             <th>FirstName</th>
             <th>LastName</th>
