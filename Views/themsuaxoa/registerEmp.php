@@ -25,7 +25,7 @@
                 <td><input type="text" name="Dept"></td>
             </tr>
             <tr>
-                <td><input type="submit" name="submit" onclick="route('EmployeesControllers')" value="ADD"></td>
+                <td><input type="submit" name="submit" onclick="route('regEmpControllers')" value="ADD"></td>
                 <td><a href="/index">Quay lại</a></td> 
             </tr>
         </table>
