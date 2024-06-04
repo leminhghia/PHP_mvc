@@ -25,6 +25,10 @@
                 <td><input type="text" name="Password" required></td>
             </tr>
             <tr>
+                <td>ngày sinh của bạn là :</td>
+                <td><input type="text" name="cauhoi"  required></td>
+            </tr>
+            <tr>
                 <td><input type="submit" name="submit" onclick="route('signupController')" value="Đăng kí"></td>
                 <td><a href="/login">dang nhap</a></td> 
             </tr>
