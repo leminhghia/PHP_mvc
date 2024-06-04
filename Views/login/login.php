@@ -22,6 +22,8 @@
             <tr>
                 <td><input type="submit" name="submit" onclick="route('loginController')" value="Đăng nhập"></td>
                 <td><a href="/signup">dang ki</a></td> 
+                <td><a href="/respass">quen mk</a></td> 
+
             </tr>
         </table>
     </form>
