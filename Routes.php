@@ -37,4 +37,5 @@ return [
         'controller' => \Controllers\ResPassControllers::class,
         'method' => 'respass'
     ],
+    
 ];
