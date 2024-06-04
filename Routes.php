@@ -31,5 +31,11 @@ return [
         'controller' => \Controllers\DelProdControllers::class,
         'method' => 'deleteUser'
     ],
- 
+    [
+        "url" => "/respass",
+        "name" => "respass",
+        'controller' => \Controllers\ResPassControllers::class,
+        'method' => 'respass'
+    ],
+    
 ];
