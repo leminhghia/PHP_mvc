@@ -16,10 +16,7 @@ class ResPassControllers extends \Core\BaseController
         $cauhoi = $_POST['cauhoi'];
         $respass = new ResPassModel();
         $respass->respass($Password,$email,$cauhoi);
-        if ($cauhoi == 'cauhoi') {
-            echo "Đổi mật khẩu thành công!";
-        } else {
-        }
+        redirect('login');
     }
     view('respass/respass');
 }
