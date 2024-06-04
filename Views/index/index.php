@@ -7,8 +7,6 @@
     <title>Document</title>
 </head>
 <style>
-   
-
     .main_menu {
         list-style: none;
         margin-right: 30px;
@@ -18,7 +16,7 @@
         border: none;
         float: right;
         margin-left: 50px;
-      
+
     }
 
     th,
@@ -26,38 +24,47 @@
         text-align: center;
         border: 1px solid black;
     }
+
+    .fix {
+        border: 1px;
+        display: flex;
+        justify-content: center;
+    }
 </style>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <body>
     <table>
         <tr>
             <td>Danh sách nhân viên</td>
         </tr>
         <tr>
-            <th>#</th>
-            <th>EmpID</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Dept</th>
+            <th class="fix">#</th>
+            <th>Tên sản phẩm</th>
+            <th>Ảnh sản phẩm</th>
+            <th>Giá sản phẩm</th>
+            <th>Số lượng sản phẩm</th>
+            <th>Mô tả</th>
             <th>Sửa</th>
             <th>xóa</th>
         </tr>
         <?php
         $i = 1;
-        foreach ($Users as $User) : ?>
+        foreach ($products as $product) : ?>
             <tr>
                 <td><?php echo  $i++ ?></td>
-                <td><?= "EMP" . $User['EmpID'] ?></td>
-                <td><?= $User['FirstName'] ?></td>
-                <td><?= $User['LastName'] ?></td>
-                <td><?= $User['Dept'] ?></td>
-                <th><a href="/index&id= <?php echo $row['EmpID']; ?>">Sửa</a></th>
-                <th><a onclick="return Del('<?php echo $row['FirstName']; ?>')" href="/&id=<?php echo $row['EmpID']; ?>">Xóa</a></th>
+                <td><?= $product['proname'] ?></td>
+                <td><img style="width:100px" src="/img/<?php echo $product['image'] ?>" ; alt=""></td>
+                <td><?= $product['price'] ?></td>
+                <td><?= $product['quanity'] ?></td>
+                <td><?= $product['description'] ?></td>
+                <th><a href="<?= route('upprod', ['id' => $product['procode']]) ?>">sửa</a></th>
+                <th><a href="<?= route('delete', ['id' => $product['procode']]) ?>">xóa</a></th>
             </tr>
         <?php endforeach; ?>
 
     </table>
-    <a href="/register">thêm</a>
+    <a href="/addprod">thêm</a>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ return [
     [
         "url" => "/index",
         "name" => "index",
-        'controller' => \Controllers\EmployeesControllers::class,
+        'controller' => \Controllers\ProductsControllers::class,
         'method' => 'index'
     ],
     [
@@ -19,5 +19,17 @@ return [
         'controller' => \Controllers\SignupControllers::class,
         'method' => 'signup'
     ],
-  
+    [
+        "url" => "/addprod",
+        "name" => "addprod",
+        'controller' => \Controllers\AddProdControllers::class,
+        'method' => 'addprod'
+    ],
+    [
+        "url" => "/deluser/{id}",
+        "name" => "delete",
+        'controller' => \Controllers\DelProdControllers::class,
+        'method' => 'deleteUser'
+    ],
+ 
 ];
