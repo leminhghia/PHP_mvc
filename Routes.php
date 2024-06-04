@@ -4,10 +4,10 @@
 return [
 
     [
-        "url" => "/",
-        "name" => "index",
-        'controller' => \Controllers\Index::class,
-        'method' => 'index'
+        "url" => "/respass",
+        "name" => "respass",
+        'controller' => \Controllers\ResPassControllers::class,
+        'method' => 'respass'
     ],
 
 ];
