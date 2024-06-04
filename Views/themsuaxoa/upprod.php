@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>Tên sản phẩm :</td>
-                <td><input type="text" name="proname" value="<?php echo "$proname"  ?>"></td>
+                <td><input type="text" name="proname"></td>
             </tr>
             <tr>
                 <td>Ảnh sản phẩm :</td>

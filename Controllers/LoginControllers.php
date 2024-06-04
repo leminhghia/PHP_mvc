@@ -13,7 +13,7 @@ class loginControllers extends \Core\BaseController
             $Password = $_POST["Password"];
             $user = new loginModel();
          $user ->getUsers($email,$Password);
-         
+     
                 redirect('index');
 
         }
