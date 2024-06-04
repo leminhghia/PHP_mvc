@@ -37,5 +37,11 @@ return [
         'controller' => \Controllers\ResPassControllers::class,
         'method' => 'respass'
     ],
+    [
+        "url" => "/upprod/{id}",
+        "name" => "upprod",
+        'controller' => \Controllers\UpProdControllers::class,
+        'method' => 'upprod'
+    ],
     
 ];
