@@ -26,22 +26,36 @@ return [
         'method' => 'addprod'
     ],
     [
-        "url" => "/deluser/{id}",
-        "name" => "delete",
-        'controller' => \Controllers\DelProdControllers::class,
-        'method' => 'deleteUser'
-    ],
-    [
+
         "url" => "/respass",
         "name" => "respass",
         'controller' => \Controllers\ResPassControllers::class,
         'method' => 'respass'
     ],
     [
+        "url" => "/deluser/{id}",
+        "name" => "delete",
+        'controller' => \Controllers\DelProdControllers::class,
+        'method' => 'deleteUser'
+    ],
+    [
+<<<<<<< HEAD
+        "url" => "/respass",
+        "name" => "respass",
+        'controller' => \Controllers\ResPassControllers::class,
+        'method' => 'respass'
+    ],
+    [
+=======
+>>>>>>> nhanhc
         "url" => "/upprod/{id}",
         "name" => "upprod",
         'controller' => \Controllers\UpProdControllers::class,
         'method' => 'upprod'
     ],
+<<<<<<< HEAD
     
 ];
+=======
+];
+>>>>>>> nhanhc
