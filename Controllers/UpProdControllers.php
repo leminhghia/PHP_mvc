@@ -19,7 +19,9 @@ class UpProdControllers extends \Core\BaseController
             $description = $_POST["description"];
             $upprod = new UpProdModel();
              $upprod->upprod( $getid,$proname, $anh,$price, $quanity, $description);
+
             redirect('index');
+
         } else {
         }
         view('themsuaxoa/upprod');
