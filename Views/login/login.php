@@ -88,11 +88,19 @@ button:hover {
                 <td>Form login</td>
             </tr>
             <tr>
+<<<<<<< HEAD
             <td><label for="email">email</label></td>
                 <td><input type="text" name="email" required></td>
             </tr>
             <tr>
             <td><label for="Password">Password</label></td>
+=======
+                <td>email :</td>
+                <td><input type="text" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+>>>>>>> f7f2604ab089674c26ec224a763bfd07d8d2bfde
                 <td><input type="text" name="Password" required></td>
             </tr>
             <tr>

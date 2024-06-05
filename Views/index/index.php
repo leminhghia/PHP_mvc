@@ -65,7 +65,11 @@
         <?php endforeach; ?>
 
     </table>
+
     <a href="/addprod">thêm</a></center>
+
+   
+
 </body>
 
 </html>
