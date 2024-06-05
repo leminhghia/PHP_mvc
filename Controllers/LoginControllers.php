@@ -12,13 +12,10 @@ class loginControllers extends \Core\BaseController
             $email = $_POST["email"];
             $Password = $_POST["Password"];
             $user = new loginModel();
-            $result = $user ->getUsers($email,$Password);
-            if($email == "" || $Password == "") {
-                redirect('login');
-            }
-            else if($result){
+         $user ->getUsers($email,$Password);
+         
                 redirect('index');
-            }
+
         }
             view('login/login');
     }}
