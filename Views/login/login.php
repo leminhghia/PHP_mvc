@@ -19,8 +19,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
     height: 100vh;
-    background-color: #f2f2f2;
+    background-color:wheat;
 }
 
 .login-container {
@@ -28,7 +29,8 @@ body {
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 300px;   
+    border-radius: 1px solid red;
 }
 
 .login-form h2 {
@@ -88,19 +90,12 @@ button:hover {
                 <td>Form login</td>
             </tr>
             <tr>
-<<<<<<< HEAD
-            <td><label for="email">email</label></td>
+            <td><label for="email">email: </label></td>
                 <td><input type="text" name="email" required></td>
             </tr>
-            <tr>
-            <td><label for="Password">Password</label></td>
-=======
-                <td>email :</td>
-                <td><input type="text" name="email" required></td>
-            </tr>
+            
             <tr>
                 <td>Password :</td>
->>>>>>> f7f2604ab089674c26ec224a763bfd07d8d2bfde
                 <td><input type="text" name="Password" required></td>
             </tr>
             <tr>
@@ -112,40 +107,3 @@ button:hover {
         </table>
     </form>
 </body>
-
-
-
-
-<!-- Đăng nhập
-<link rel="stylesheet" href="../login/style.css">
-<div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            
-                            <div class="title-login-form">Đăng nhập</div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="login-form">
-                                <form method="post">
-                                    <label>email *</label>
-                                    <input name="email" type="text" placeholder="email" required />
-                                    <label>Mật khẩu *</label>
-                                    <input name="Password" type="password" placeholder="Mật khẩu" required/>
-                                    <div class="checkbox checkbox-primary">
-                                        <input id="checkbox" type="checkbox" checked>
-                                        <label for="checkbox">Nhớ mật khẩu</label>
-                                    </div>
-                                    <tr>
-                <td><input type="submit" name="submit" onclick="route('loginController')" value="Đăng nhập"></td>
-                <td><a href="/signup">dang ki</a></td> 
-                <td><a href="/respass">quen mk</a></td> 
-
-            </tr>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
